@@ -12,6 +12,12 @@
 		5BE358661D4653B5002F0E08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE358641D4653B5002F0E08 /* Main.storyboard */; };
 		5BE358681D4653B6002F0E08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BE358671D4653B6002F0E08 /* Assets.xcassets */; };
 		5BE3586B1D4653B6002F0E08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE358691D4653B6002F0E08 /* LaunchScreen.storyboard */; };
+		5BE358771D46556F002F0E08 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE358761D46556F002F0E08 /* Board.swift */; };
+		5BE358791D46559D002F0E08 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE358781D46559D002F0E08 /* Drawer.swift */; };
+		5BE3587B1D4655A7002F0E08 /* X.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE3587A1D4655A7002F0E08 /* X.swift */; };
+		5BE3587D1D4655B6002F0E08 /* O.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE3587C1D4655B6002F0E08 /* O.swift */; };
+		5BE3587F1D4655C3002F0E08 /* Blank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE3587E1D4655C3002F0E08 /* Blank.swift */; };
+		5BE358811D46564B002F0E08 /* MinMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE358801D46564B002F0E08 /* MinMax.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		5BE358671D4653B6002F0E08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BE3586A1D4653B6002F0E08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BE3586C1D4653B6002F0E08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BE358761D46556F002F0E08 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		5BE358781D46559D002F0E08 /* Drawer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
+		5BE3587A1D4655A7002F0E08 /* X.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = X.swift; sourceTree = "<group>"; };
+		5BE3587C1D4655B6002F0E08 /* O.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = O.swift; sourceTree = "<group>"; };
+		5BE3587E1D4655C3002F0E08 /* Blank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blank.swift; sourceTree = "<group>"; };
+		5BE358801D46564B002F0E08 /* MinMax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinMax.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,60 @@
 		5BE3585F1D4653B5002F0E08 /* TicTacToe MinMax */ = {
 			isa = PBXGroup;
 			children = (
-				5BE358601D4653B5002F0E08 /* AppDelegate.swift */,
-				5BE358621D4653B5002F0E08 /* ViewController.swift */,
+				5BE358751D4654E0002F0E08 /* Supporting */,
+				5BE358741D4653D3002F0E08 /* Controller */,
+				5BE358731D4653CF002F0E08 /* View */,
+				5BE358721D4653CA002F0E08 /* Model */,
+			);
+			path = "TicTacToe MinMax";
+			sourceTree = "<group>";
+		};
+		5BE358721D4653CA002F0E08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BE358761D46556F002F0E08 /* Board.swift */,
+				5BE358781D46559D002F0E08 /* Drawer.swift */,
+				5BE3587A1D4655A7002F0E08 /* X.swift */,
+				5BE3587C1D4655B6002F0E08 /* O.swift */,
+				5BE3587E1D4655C3002F0E08 /* Blank.swift */,
+				5BE358801D46564B002F0E08 /* MinMax.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5BE358731D4653CF002F0E08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BE358821D465688002F0E08 /* Custom Views */,
 				5BE358641D4653B5002F0E08 /* Main.storyboard */,
 				5BE358671D4653B6002F0E08 /* Assets.xcassets */,
 				5BE358691D4653B6002F0E08 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5BE358741D4653D3002F0E08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BE358621D4653B5002F0E08 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5BE358751D4654E0002F0E08 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				5BE358601D4653B5002F0E08 /* AppDelegate.swift */,
 				5BE3586C1D4653B6002F0E08 /* Info.plist */,
 			);
-			path = "TicTacToe MinMax";
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		5BE358821D465688002F0E08 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE358791D46559D002F0E08 /* Drawer.swift in Sources */,
+				5BE358811D46564B002F0E08 /* MinMax.swift in Sources */,
+				5BE3587F1D4655C3002F0E08 /* Blank.swift in Sources */,
 				5BE358631D4653B5002F0E08 /* ViewController.swift in Sources */,
 				5BE358611D4653B5002F0E08 /* AppDelegate.swift in Sources */,
+				5BE3587D1D4655B6002F0E08 /* O.swift in Sources */,
+				5BE358771D46556F002F0E08 /* Board.swift in Sources */,
+				5BE3587B1D4655A7002F0E08 /* X.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,7 @@
 		5BE3587D1D4655B6002F0E08 /* O.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE3587C1D4655B6002F0E08 /* O.swift */; };
 		5BE3587F1D4655C3002F0E08 /* Blank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE3587E1D4655C3002F0E08 /* Blank.swift */; };
 		5BE358811D46564B002F0E08 /* MinMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE358801D46564B002F0E08 /* MinMax.swift */; };
+		5BE358841D4659E5002F0E08 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE358831D4659E5002F0E08 /* BoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		5BE3587C1D4655B6002F0E08 /* O.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = O.swift; sourceTree = "<group>"; };
 		5BE3587E1D4655C3002F0E08 /* Blank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blank.swift; sourceTree = "<group>"; };
 		5BE358801D46564B002F0E08 /* MinMax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinMax.swift; sourceTree = "<group>"; };
+		5BE358831D4659E5002F0E08 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		5BE358821D465688002F0E08 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				5BE358831D4659E5002F0E08 /* BoardView.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				5BE358631D4653B5002F0E08 /* ViewController.swift in Sources */,
 				5BE358611D4653B5002F0E08 /* AppDelegate.swift in Sources */,
 				5BE3587D1D4655B6002F0E08 /* O.swift in Sources */,
+				5BE358841D4659E5002F0E08 /* BoardView.swift in Sources */,
 				5BE358771D46556F002F0E08 /* Board.swift in Sources */,
 				5BE3587B1D4655A7002F0E08 /* X.swift in Sources */,
 			);
@@ -312,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TicTacToe MinMax/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.homeappz.TicTacToe-MinMax";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -323,6 +328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "TicTacToe MinMax/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.homeappz.TicTacToe-MinMax";
 				PRODUCT_NAME = "$(TARGET_NAME)";

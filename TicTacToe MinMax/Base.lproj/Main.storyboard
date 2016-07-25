@@ -16,11 +16,65 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="671-Z2-0Hk" customClass="BoardView" customModule="TicTacToe_MinMax" customModuleProvider="target">
+                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="vdv-CT-DQB"/>
+                                    <constraint firstAttribute="height" constant="240" id="vyW-i6-DxB"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Civ-qH-fIf" appends="YES" id="iNf-yM-nYr"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8c5-TZ-um0">
+                                <rect key="frame" x="180" y="428" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2tu-Ej-RJV"/>
+                                    <constraint firstAttribute="width" constant="240" id="KsH-Gl-Ppa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gcg-rz-oc6">
+                                <rect key="frame" x="180" y="552" width="240" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HbT-rc-Tfp"/>
+                                    <constraint firstAttribute="width" constant="240" id="Thn-da-AYy"/>
+                                </constraints>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ya0-cR-Wcq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8c5-TZ-um0" firstAttribute="leading" secondItem="671-Z2-0Hk" secondAttribute="leading" id="Jmc-PF-HUK"/>
+                            <constraint firstItem="8c5-TZ-um0" firstAttribute="top" secondItem="671-Z2-0Hk" secondAttribute="bottom" constant="8" id="SVz-2D-u8v"/>
+                            <constraint firstItem="Gcg-rz-oc6" firstAttribute="leading" secondItem="671-Z2-0Hk" secondAttribute="leading" id="VbL-ck-8n2"/>
+                            <constraint firstItem="671-Z2-0Hk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YY9-ma-HtL"/>
+                            <constraint firstItem="671-Z2-0Hk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Yq0-d7-UMd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gcg-rz-oc6" secondAttribute="bottom" constant="8" id="vwE-Af-TbF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnReset" destination="Gcg-rz-oc6" id="D1z-Li-b5l"/>
+                        <outlet property="lblStatusPlayer" destination="8c5-TZ-um0" id="FHC-W2-RPI"/>
+                        <outlet property="vBoard" destination="671-Z2-0Hk" id="6CE-QC-waB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Civ-qH-fIf">
+                    <connections>
+                        <action selector="tapCell:" destination="BYZ-38-t0r" id="u0w-wK-ALb"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="219" y="399"/>
         </scene>
     </scenes>
 </document>

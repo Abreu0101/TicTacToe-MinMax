@@ -11,6 +11,20 @@ enum GameState:Int{
     case HumanWin = -1
     case Playing = 2
     case Draw = 0
+    
+    var description:String{
+        switch self{
+        case .MachineWin:
+            return "Gano la máquina!"
+        case .HumanWin:
+            return "Ganaste!"
+        case Draw:
+            return "Empate!"
+        case .Playing:
+            return "Aún Jugando!"
+        }
+    }
+    
 }
 
 class Board{
